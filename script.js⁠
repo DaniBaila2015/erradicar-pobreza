@@ -1,0 +1,53 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const commentForm = document.getElementById("commentForm");
+    const commentsList = document.getElementById("commentsList");
+
+    if (commentForm) {
+        commentForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const nameInput = document.getElementById("userName");
+            const msgInput = document.getElementById("userMsg");
+
+            const name = nameInput.value.trim();
+            const message = msgInput.value.trim();
+
+            if (name && message) {
+                // Criar o novo cartão de comentário
+                const newComment = document.createElement("div");
+                newComment.className = "comment-card";
+                newComment.style.borderLeftColor = "#2ed573"; // Cor verde para destacar novos comentários
+
+                newComment.innerHTML = `
+                    <div class="comment-header">
+                        <strong><i class="fa-solid fa-user-sparkles"></i> ${escapeHTML(name)}</strong>
+                        <span class="comment-date">Agora mesmo</span>
+                    </div>
+                    <p>"${escapeHTML(message)}"</p>
+                `;
+
+                // Adicionar ao topo da lista
+                commentsList.prepend(newComment);
+
+                // Limpar o formulário
+                nameInput.value = "";
+                msgInput.value = "";
+
+                alert("Obrigado por partilhares a tua ideia no Espaço de Fala! 🌟");
+            }
+        });
+    }
+
+    // Função de segurança para evitar texto malicioso
+    function escapeHTML(str) {
+        return str.replace(/[&<>'"]/g, 
+            tag => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                "'": '&#39;',
+                '"': '&quot;'
+            }[tag] || tag)
+        );
+    }
+});
