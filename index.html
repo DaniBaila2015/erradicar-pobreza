@@ -3,163 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cidadania Global: Erradicar a Pobreza</title>
+    <title>Global Poverty Observatory | Erradicar a Pobreza</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <div class="header-container">
-            <h1>Cidadania Global & Ação Social</h1>
-            <p>Erradicar a pobreza em todas as suas formas: O ODS 1 e a Interseccionalidade da Dignidade Humana</p>
+    <!-- Navegação Global -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fa-solid fa-earth-americas brand-icon"></i>
+            <span>POVERTY<strong>ZERO</strong></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#dados">Dados Globais</a></li>
+            <li><a href="#multidimensional">Pobreza Multidimensional</a></li>
+            <li><a href="#calculadora">Calculadora IPM</a></li>
+            <li><a href="#interseccoes">ODS & Cidadania</a></li>
+            <li><a href="#solucoes">Políticas & Soluções</a></li>
+            <li><a href="#agir" class="btn-nav">Como Agir</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge-hero">Agenda 2030 • ODS 1</span>
+            <h1>A Pobreza Não É Inevitável.<br><span class="highlight-text">É Uma Questão de Direitos Humanos.</span></h1>
+            <p>Mais de 1.2 mil milhões de pessoas vivem em pobreza multidimensional no mundo. Explora os dados, compreende as causas estruturais e faz parte da solução global.</p>
+            <div class="hero-actions">
+                <a href="#calculadora" class="btn-primary"><i class="fa-solid fa-calculator"></i> Testar Calculadora IPM</a>
+                <a href="#dados" class="btn-secondary"><i class="fa-solid fa-chart-line"></i> Ver Dados Globais</a>
+            </div>
         </div>
     </header>
 
-    <!-- Menu de Navegação -->
-    <nav>
-        <div class="nav-container">
-            <a href="#pobreza">O Desafio</a>
-            <a href="#temas">Dimensões</a>
-            <a href="#causas">Causas Estruturais</a>
-            <a href="#estatisticas">Dados & Impacto</a>
-            <a href="#acoes">Como Agir</a>
-            <a href="#recursos">Recursos</a>
-        </div>
-    </nav>
-
-    <main class="container">
-
-        <!-- Introdução / O Desafio -->
-        <section id="pobreza" class="card-section">
-            <h2>1. Compreender a Pobreza Multidimensional</h2>
-            <p>Erradicar a pobreza (ODS 1 da Agenda 2030) não se limita a aumentar o rendimento individual. Pobreza significa a **privação contínua do acesso aos direitos humanos fundamentais**: nutrição, habitação digna, água potável, saúde, educação e participação na vida política e social.</p>
-            <div class="highlight-box">
-                <strong>Sabias?</strong> A pobreza extrema é frequentemente medida por pessoas a viver com menos de US$ 2,15 por dia, mas a <em>pobreza relativa</em> afeta milhões em países desenvolvidos, criando exclusão e desigualdade de oportunidades.
+    <!-- Métricas Globais em Tempo Real -->
+    <section id="dados" class="stats-section">
+        <div class="container">
+            <div class="stats-header">
+                <h2>O Estado da Pobreza Global e Nacional</h2>
+                <p>Indicadores atualizados com base no Global Multidimensional Poverty Index (PNUD/Oxford) e EAPN Portugal.</p>
             </div>
-        </section>
-
-        <!-- Dimensões Interligadas -->
-        <section id="temas" class="card-section">
-            <h2>2. As Interligações: Pobreza e Outros Temas Sociais</h2>
-            <p>Não é possível erradicar a pobreza sem resolver os problemas que a alimentam. Vê como diferentes áreas se cruzam:</p>
-
-            <div class="grid-layout">
-                
-                <div class="topic-card">
-                    <span class="badge">ODS 2</span>
-                    <h3>Fome e Segurança Alimentar</h3>
-                    <p>A falta de recursos financeiros impede o acesso a alimentação nutritiva. Por outro lado, a má nutrição compromete a saúde e a capacidade de aprendizagem e trabalho, perpetuando o ciclo da pobreza.</p>
-                </div>
-
-                <div class="topic-card">
-                    <span class="badge">ODS 3</span>
-                    <h3>Saúde e Bem-Estar</h3>
-                    <p>Doenças e custos médicos catastróficos são das maiores causas de endividamento e empobrecimento de famílias vulneráveis. A saúde mental e física é a base de uma vida plena.</p>
-                </div>
-
-                <div class="topic-card">
-                    <span class="badge">ODS 4</span>
-                    <h3>Educação de Qualidade</h3>
-                    <p>A educação é o maior elevador social. Crianças que abandonam a escola precocemente para trabalhar acabam presas a empregos de baixo rendimento na idade adulta.</p>
-                </div>
-
-                <div class="topic-card">
-                    <span class="badge">ODS 5</span>
-                    <h3>Igualdade de Género</h3>
-                    <p>Em todo o mundo, as mulheres enfrentam maior disparidade salarial, menor posse de terra e maior carga de trabalho de cuidados não pago, tornando-as desproporcionalmente afetadas pela pobreza.</p>
-                </div>
-
-                <div class="topic-card">
-                    <span class="badge">ODS 8</span>
-                    <h3>Trabalho Digno e Salário Justo</h3>
-                    <p>Ter emprego nem sempre protege da pobreza. O fenómeno dos "trabalhadores pobres" destaca a precarização do trabalho, salários mínimos insuficientes e a falta de proteção social.</p>
-                </div>
-
-                <div class="topic-card">
-                    <span class="badge">ODS 10 e 11</span>
-                    <h3>Habitação e Justiça Climática</h3>
-                    <p>O acesso a habitação acessível é hoje uma crise central. Além disso, as populações mais pobres são as mais afetadas por eventos climáticos extremos e degradação ambiental.</p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Causas Estruturais -->
-        <section id="causas" class="card-section">
-            <h2>3. Causas Estruturais da Pobreza</h2>
-            <p>Para combater a pobreza, precisamos de atacar as suas raízes e não apenas os sintomas:</p>
-            <ul class="styled-list">
-                <li><strong>Desigualdade de Oportunidades:</strong> Falta de acesso equitativo a redes de apoio, literacia digital, crédito e tecnologia.</li>
-                <li><strong>Sistemas de Proteção Social Frágeis:</strong> Falhas em subsídios de desemprego, pensões e apoio à infância ou invalidez.</li>
-                <li><strong>Especulação e Custo de Vida:</strong> Inflação nos bens essenciais (alimentos, energia, habitação) que consome a maior fatia do rendimento dos agregados mais vulneráveis.</li>
-                <li><strong>Discriminacão e Exclusão Social:</strong> Barreiras enfrentadas por minorias, imigrantes, pessoas com deficiência ou comunidades rurais.</li>
-            </ul>
-        </section>
-
-        <!-- Estatísticas e Fatos -->
-        <section id="estatisticas" class="card-section">
-            <h2>4. Factos e Números Relevantes</h2>
             <div class="stats-grid">
-                <div class="stat-box">
-                    <span class="stat-number">+700M</span>
-                    <p>Pessoas a viver em pobreza extrema a nível mundial.</p>
+                <div class="stat-card">
+                    <i class="fa-solid fa-users stat-icon"></i>
+                    <span class="stat-number">1.2B</span>
+                    <span class="stat-label">Pessoas em Pobreza Multidimensional (Mundo)</span>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-number">1 em 5</span>
-                    <p>Crianças na União Europeia em risco de pobreza ou exclusão social.</p>
+                <div class="stat-card">
+                    <span class="stat-number">18.3%</span>
+                    <span class="stat-label">População em Risco de Pobreza ou Exclusão (Portugal)</span>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-number">100%</span>
-                    <p>Necessidade de empenho comunitário e político para atingir as metas de 2030.</p>
+                <div class="stat-card">
+                    <span class="stat-number">50%</span>
+                    <p class="stat-sub">dos pobres globais são crianças com menos de 18 anos</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Como Agir / Cidadania Ativa -->
-        <section id="acoes" class="card-section">
-            <h2>5. Como Agir: Ação Individual e Coletiva</h2>
-            <div class="action-list">
-                <div class="action-item">
-                    <h4>Voluntariado & Ação Local</h4>
-                    <p>Colabora com bancos alimentares, refood, associações de apoio a pessoas em situação de sem-abrigo ou centros comunitários da tua região.</p>
-                </div>
-                <div class="action-item">
-                    <h4>Literacia Financeira e Social</h4>
-                    <p>Aprende e partilha conhecimentos sobre gestão de orçamento, direitos do consumidor, direitos trabalhistas e apoio social disponível.</p>
-                </div>
-                <div class="action-item">
-                    <h4>Exigência de Políticas Públicas (Advocacia)</h4>
-                    <p>Vota de forma informada, participa nas assembleias municipais e assina petições por habitação acessível, salários dignos e redes de saúde fortes.</p>
-                </div>
-                <div class="action-item">
-                    <h4>Combate ao Estigma</h4>
-                    <p>Desconstruir preconceitos e a aporiafobia (preconceito contra os pobres). A pobreza é uma condição socioeconómica, não uma falha moral individual.</p>
+                <div class="stat-card">
+                    <span class="stat-number">$2.15</span>
+                    <span class="stat-label">Limiar de Pobreza Extrema Diária por Pessoa (Banco Mundial)</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Recursos e Links -->
-        <section id="recursos" class="card-section">
-            <h2>6. Recursos e Leituras Recomendadas</h2>
-            <p>Aprofunda o teu conhecimento através de fontes de referência:</p>
-            <ul class="styled-list">
-                <li><a href="https://sdgs.un.org/goals/goal1" target="_blank" rel="noopener">ONU - Objetivo de Desenvolvimento Sustentável 1</a></li>
-                <li><a href="https://www.eapn.pt/" target="_blank" rel="noopener">EAPN Portugal (Rede Europeia Anti-Pobreza)</a></li>
-                <li><a href="https://www.ffms.pt/" target="_blank" rel="noopener">Fundação Francisco Manuel dos Santos (Estudos sobre pobreza e desigualdade)</a></li>
-                <li><a href="https://www.oxfam.org/" target="_blank" rel="noopener">Oxfam International - Relatórios sobre Desigualdade Global</a></li>
-            </ul>
-        </section>
+    <!-- Pobreza Multidimensional -->
+    <section id="multidimensional" class="content-section">
+        <div class="container">
+            <h2>Pobreza É Muito Mais Do Que Falta de Dinheiro</h2>
+            <p class="section-lead">A pobreza afeta a vida diária das pessoas através de privações sobrepostas. O Índice de Pobreza Multidimensional (IPM) mede 10 indicadores agrupados em 3 dimensões essenciais:</p>
+            
+            <div class="dimensions-grid">
+                <div class="dim-card health">
+                    <div class="dim-header">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <h3>1. Saúde</h3>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> <strong>Nutrição:</strong> Algum membro da família com subnutrição.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Mortalidade Infantil:</strong> Morte de crianças na família nos últimos 5 anos.</li>
+                    </ul>
+                </div>
 
-    </main>
+                <div class="dim-card education">
+                    <div class="dim-header">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>2. Educação</h3>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> <strong>Anos de Escolaridade:</strong> Nenhum membro concluiu 6 anos de escola.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Assiduidade Escolar:</strong> Crianças em idade escolar fora do ensino.</li>
+                    </ul>
+                </div>
+
+                <div class="dim-card living">
+                    <div class="dim-header">
+                        <i class="fa-solid fa-house"></i>
+                        <h3>3. Padrão de Vida</h3>
+                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Combustível de cozinha (poluição interna)</li>
+                        <li><i class="fa-solid fa-check"></i> Saneamento básico seguro</li>
+                        <li><i class="fa-solid fa-check"></i> Água potável acessível</li>
+                        <li><i class="fa-solid fa-check"></i> Eletricidade</li>
+                        <li><i class="fa-solid fa-check"></i> Habitação digna</li>
+                        <li><i class="fa-solid fa-check"></i> Bens essenciais (radio, TV, telemóvel, transporte)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULADORA INTERATIVA IPM -->
+    <section id="calculadora" class="interactive-section">
+        <div class="container">
+            <div class="calculator-wrapper">
+                <h2>Simulador Interativo: Avaliação de Vulnerabilidade Multidimensional</h2>
+                <p>Seleciona as privações abaixo para calcular a pontuação de risco multidimensional de um agregado familiar:</p>
+                
+                <form id="ipmForm" class="calc-form">
+                    <div class="calc-grid">
+                        <label class="checkbox-card">
+                            <input type="checkbox" value="16.6">
+                            <span><i class="fa-solid fa-utensils"></i> Subnutrição no Agregado</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" value="16.6">
+                            <span><i class="fa-solid fa-book-open"></i> Baixa Escolaridade dos Adultos</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" value="16.6">
+                            <span><i class="fa-solid fa-child-reaching"></i> Crianças Fora da Escola</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" value="5.5">
+                            <span><i class="fa-solid fa-faucet-drip"></i> Sem Acesso a Água Potável</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" value="5.5">
+                            <span><i class="fa-solid fa-toilet"></i> Sem Saneamento Adequado</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" value="5.5">
+                            <span><i class="fa-solid fa-bolt"></i> Sem Acesso a Eletricidade</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" value="5.5">
+                            <span><i class="fa-solid fa-house-crack"></i> Habitação Inadequada</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" value="5.5">
+                            <span><i class="fa-solid fa-fire-burner"></i> Combustível Poluente na Cozinha</span>
+                        </label>
+                    </div>
+                </form>
+
+                <div class="calc-result" id="resultBox">
+                    <h3>Índice de Deprivação Aferido: <span id="scoreText">0%</span></h3>
+                    <p id="statusText">Selecione as condições acima para gerar o relatório.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ODS & Interseccionalidade -->
+    <section id="interseccoes" class="content-section">
+        <div class="container">
+            <h2>Pobreza e a Interseção com a Cidadania Ativa</h2>
+            <div class="ods-cards-grid">
+                <div class="ods-card">
+                    <span class="ods-number">ODS 1 + ODS 8</span>
+                    <h3>Pobreza Laboral</h3>
+                    <p>Ter um emprego já não garante sair da pobreza. Em Portugal e na Europa, milhares de trabalhadores vivem abaixo do limiar de pobreza devido a salários precários e inflação na habitação.</p>
+                </div>
+                <div class="ods-card">
+                    <span class="ods-number">ODS 1 + ODS 13</span>
+                    <h3>Justiça Climática</h3>
+                    <p>As populações mais pobres são as mais desproporcionalmente afetadas por eventos climáticos extremos, secas, inundações e subida do custo dos alimentos.</p>
+                </div>
+                <div class="ods-card">
+                    <span class="ods-number">ODS 1 + ODS 5</span>
+                    <h3>A Pobreza Tem Rosto Feminino</h3>
+                    <p>As mulheres assumem a maior parte do trabalho não pago de cuidados, enfrentam disparidades salariais e têm taxas mais elevadas de pobreza na velhice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluções Estruturais -->
+    <section id="solucoes" class="content-section dark-bg">
+        <div class="container">
+            <h2>Que Soluções Funcionam?</h2>
+            <div class="solutions-grid">
+                <div class="solution-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>1. Sistemas Fortes de Proteção Social</h3>
+                    <p>Rendimentos mínimos de inserção, subsídios de desemprego e apoio à infância garantem que sobressaltos da vida não afundem as famílias na miséria.</p>
+                </div>
+                <div class="solution-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <h3>2. Justiça Fiscal e Redistribuição</h3>
+                    <p>Impostos progressivos que combatem a acumulação extrema de riqueza e financiam serviços públicos universais (Saúde, Educação e Habitação).</p>
+                </div>
+                <div class="solution-item">
+                    <i class="fa-solid fa-building-user"></i>
+                    <h3>3. Habitação Pública Acessível</h3>
+                    <p>Regulação dos mercados imobiliários e investimento público em habitação para garantir o direito a um teto digno.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chamada para Ação / Cidadania -->
+    <section id="agir" class="cta-section">
+        <div class="container">
+            <h2>O Que Podes Fazer Como Cidadão?</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <i class="fa-solid fa-hand-holding-hand"></i>
+                    <h3>Voluntariado Local</h3>
+                    <p>Junta-te a iniciativas como a Refood, Bancos Alimentares, EAPN Portugal ou associações locais de apoio a sem-abrigo.</p>
+                </div>
+                <div class="action-card">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h3>Advocacia e Exigência Política</h3>
+                    <p>Participa em orçamentos participativos, questiona os teus representantes locais e apoia políticas públicas inclusivas.</p>
+                </div>
+                <div class="action-card">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3>Combater a Aporiafobia</h3>
+                    <p>Rejeita o preconceito contra os pobres. A pobreza é uma falha dos sistemas sociais e económicos, não de caráter individual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Rodapé -->
     <footer>
-        <div class="footer-container">
-            <p>&copy; Projeto de Cidadania e Desenvolvimento — Erradicar a Pobreza</p>
-            <p><small>Desenvolvido para alojamento no GitHub Pages | Promover a justiça social e a igualdade.</small></p>
+        <div class="container footer-content">
+            <p>&copy; 2026 Global Poverty Observatory | Projeto de Cidadania e Desenvolvimento.</p>
+            <p>Fontes de dados: PNUD, Oxford Poverty & Human Development Initiative (OPHI), EAPN e Eurostat.</p>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
