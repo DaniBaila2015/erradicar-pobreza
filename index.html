@@ -3,236 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Poverty Observatory | Erradicar a Pobreza</title>
+    <title>Mundo Sem Pobreza | Explicado de Forma Simples</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navegação Global -->
-    <nav class="navbar">
-        <div class="nav-brand">
-            <i class="fa-solid fa-earth-americas brand-icon"></i>
-            <span>POVERTY<strong>ZERO</strong></span>
+    <!-- Navegação / Menu de Abas -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-heart-pulse logo-icon"></i>
+            <span>Mundo<strong class="underline-red">SemPobreza</strong></span>
         </div>
-        <ul class="nav-links">
-            <li><a href="#dados">Dados Globais</a></li>
-            <li><a href="#multidimensional">Pobreza Multidimensional</a></li>
-            <li><a href="#calculadora">Calculadora IPM</a></li>
-            <li><a href="#interseccoes">ODS & Cidadania</a></li>
-            <li><a href="#solucoes">Políticas & Soluções</a></li>
-            <li><a href="#agir" class="btn-nav">Como Agir</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <span class="badge-hero">Agenda 2030 • ODS 1</span>
-            <h1>A Pobreza Não É Inevitável.<br><span class="highlight-text">É Uma Questão de Direitos Humanos.</span></h1>
-            <p>Mais de 1.2 mil milhões de pessoas vivem em pobreza multidimensional no mundo. Explora os dados, compreende as causas estruturais e faz parte da solução global.</p>
-            <div class="hero-actions">
-                <a href="#calculadora" class="btn-primary"><i class="fa-solid fa-calculator"></i> Testar Calculadora IPM</a>
-                <a href="#dados" class="btn-secondary"><i class="fa-solid fa-chart-line"></i> Ver Dados Globais</a>
-            </div>
-        </div>
+        <nav>
+            <ul class="nav-tabs">
+                <li><a href="#inicio" class="tab-link active"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a href="#o-que-e" class="tab-link"><i class="fa-solid fa-lightbulb"></i> O que é?</a></li>
+                <li><a href="#solucoes" class="tab-link"><i class="fa-solid fa-wand-magic-sparkles"></i> Soluções</a></li>
+                <li><a href="#falar" class="tab-link highlight-tab"><i class="fa-solid fa-comments"></i> Aba de Falar (Vozes)</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Métricas Globais em Tempo Real -->
-    <section id="dados" class="stats-section">
-        <div class="container">
-            <div class="stats-header">
-                <h2>O Estado da Pobreza Global e Nacional</h2>
-                <p>Indicadores atualizados com base no Global Multidimensional Poverty Index (PNUD/Oxford) e EAPN Portugal.</p>
+    <!-- Aba 1: Início (Hero) -->
+    <section id="inicio" class="tab-content active-content">
+        <div class="hero-box">
+            <span class="badge">Aprender & Mudar o Mundo</span>
+            <h1>Imagine um mundo onde <span class="underline-yellow">todos têm um teto</span>, comida no prato e <span class="underline-red">sorrisos no rosto</span>.</h1>
+            <p class="big-text">Erradicar a pobreza é, simplesmente, garantir que <strong>ninguém fica para trás</strong> e que todos têm o básico para viver felizes e com saúde.</p>
+            <a href="#o-que-e" class="btn-main"><i class="fa-solid fa-arrow-down"></i> Vamos aprender juntos?</a>
+        </div>
+        
+        <div class="illustration-row">
+            <div class="img-card">
+                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop" alt="Crianças felizes a sorrir">
+                <p><strong>Alegria:</strong> Toda a gente merece ter um futuro feliz.</p>
             </div>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <i class="fa-solid fa-users stat-icon"></i>
-                    <span class="stat-number">1.2B</span>
-                    <span class="stat-label">Pessoas em Pobreza Multidimensional (Mundo)</span>
+            <div class="img-card">
+                <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800&auto=format&fit=crop" alt="Apoio comunitário e comida">
+                <p><strong>Partilha:</strong> Cuidar uns dos outros é o primeiro passo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aba 2: O que é a Pobreza? (Explicado de forma super simples) -->
+    <section id="o-que-e" class="tab-content">
+        <div class="section-title">
+            <h2>Afinal, o que é a <span class="underline-red">Pobreza</span>?</h2>
+            <p>Pensa nisto como um jogo de construção com 4 peças principais:</p>
+        </div>
+
+        <div class="simple-cards-grid">
+            <div class="card-simple">
+                <div class="icon-circle red"><i class="fa-solid fa-utensils"></i></div>
+                <h3>1. Falta de Comida</h3>
+                <p>Quando a barriga dói porque não há comida suficiente em casa ou a comida não é saudável.</p>
+            </div>
+
+            <div class="card-simple">
+                <div class="icon-circle blue"><i class="fa-solid fa-house-chimney"></i></div>
+                <h3>2. Sem Casa Digna</h3>
+                <p>Não ter um teto quentinho quando chove ou um lugar seguro e limpo para dormir.</p>
+            </div>
+
+            <div class="card-simple">
+                <div class="icon-circle yellow"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3>3. Sem Escola</h3>
+                <p>Não conseguir ir à escola para aprender a ler, desenhar, fazer amigos e ter um sonho para o futuro.</p>
+            </div>
+
+            <div class="card-simple">
+                <div class="icon-circle green"><i class="fa-solid fa-kit-medical"></i></div>
+                <h3>4. Sem Médico</h3>
+                <p>Estar doentinho e não ter um médico por perto ou remédios para ajudar a melhorar rápido.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aba 3: Como Resolver (Soluções Mágicas da Vida Real) -->
+    <section id="solucoes" class="tab-content">
+        <div class="section-title">
+            <h2>Como podemos <span class="underline-green">resolver</span> isto?</h2>
+            <p>Não é feitiçaria, é trabalho de equipa entre todas as pessoas do mundo!</p>
+        </div>
+
+        <div class="solutions-wrapper">
+            <div class="sol-card">
+                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=600&auto=format&fit=crop" alt="Escola e Educação">
+                <div class="sol-info">
+                    <h3><span class="underline-yellow">Escola para Todos</span></h3>
+                    <p>Se todas as crianças forem à escola, quando crescerem vão saber construir casas, inventar remédios, criar trabalhos e ajudar a comunidade.</p>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">18.3%</span>
-                    <span class="stat-label">População em Risco de Pobreza ou Exclusão (Portugal)</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">50%</span>
-                    <p class="stat-sub">dos pobres globais são crianças com menos de 18 anos</p>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">$2.15</span>
-                    <span class="stat-label">Limiar de Pobreza Extrema Diária por Pessoa (Banco Mundial)</span>
+            </div>
+
+            <div class="sol-card">
+                <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb0?q=80&w=600&auto=format&fit=crop" alt="Ajudar e doar">
+                <div class="sol-info">
+                    <h3><span class="underline-red">Partilhar e Ajudar</span></h3>
+                    <p>Apoiar quem mais precisa com comida, roupas e, acima de tudo, carinho e respeito. Ninguém deve sentir-se sozinho!</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pobreza Multidimensional -->
-    <section id="multidimensional" class="content-section">
-        <div class="container">
-            <h2>Pobreza É Muito Mais Do Que Falta de Dinheiro</h2>
-            <p class="section-lead">A pobreza afeta a vida diária das pessoas através de privações sobrepostas. O Índice de Pobreza Multidimensional (IPM) mede 10 indicadores agrupados em 3 dimensões essenciais:</p>
-            
-            <div class="dimensions-grid">
-                <div class="dim-card health">
-                    <div class="dim-header">
-                        <i class="fa-solid fa-heart-pulse"></i>
-                        <h3>1. Saúde</h3>
-                    </div>
-                    <ul>
-                        <li><i class="fa-solid fa-check"></i> <strong>Nutrição:</strong> Algum membro da família com subnutrição.</li>
-                        <li><i class="fa-solid fa-check"></i> <strong>Mortalidade Infantil:</strong> Morte de crianças na família nos últimos 5 anos.</li>
-                    </ul>
-                </div>
-
-                <div class="dim-card education">
-                    <div class="dim-header">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <h3>2. Educação</h3>
-                    </div>
-                    <ul>
-                        <li><i class="fa-solid fa-check"></i> <strong>Anos de Escolaridade:</strong> Nenhum membro concluiu 6 anos de escola.</li>
-                        <li><i class="fa-solid fa-check"></i> <strong>Assiduidade Escolar:</strong> Crianças em idade escolar fora do ensino.</li>
-                    </ul>
-                </div>
-
-                <div class="dim-card living">
-                    <div class="dim-header">
-                        <i class="fa-solid fa-house"></i>
-                        <h3>3. Padrão de Vida</h3>
-                    </div>
-                    <ul>
-                        <li><i class="fa-solid fa-check"></i> Combustível de cozinha (poluição interna)</li>
-                        <li><i class="fa-solid fa-check"></i> Saneamento básico seguro</li>
-                        <li><i class="fa-solid fa-check"></i> Água potável acessível</li>
-                        <li><i class="fa-solid fa-check"></i> Eletricidade</li>
-                        <li><i class="fa-solid fa-check"></i> Habitação digna</li>
-                        <li><i class="fa-solid fa-check"></i> Bens essenciais (radio, TV, telemóvel, transporte)</li>
-                    </ul>
-                </div>
+    <!-- Aba 4: A PÁGINA DE TALK / ESPAÇO DE FALA (Aba Falar) -->
+    <section id="falar" class="tab-content">
+        <div class="talk-container">
+            <div class="section-title">
+                <h2>Espaço de Fala: <span class="underline-blue">A Tua Voz Conta!</span></h2>
+                <p>Este é o teu cantinho para falar, dar ideias, fazer perguntas ou deixar uma mensagem bonita sobre o mundo.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- CALCULADORA INTERATIVA IPM -->
-    <section id="calculadora" class="interactive-section">
-        <div class="container">
-            <div class="calculator-wrapper">
-                <h2>Simulador Interativo: Avaliação de Vulnerabilidade Multidimensional</h2>
-                <p>Seleciona as privações abaixo para calcular a pontuação de risco multidimensional de um agregado familiar:</p>
-                
-                <form id="ipmForm" class="calc-form">
-                    <div class="calc-grid">
-                        <label class="checkbox-card">
-                            <input type="checkbox" value="16.6">
-                            <span><i class="fa-solid fa-utensils"></i> Subnutrição no Agregado</span>
-                        </label>
-                        <label class="checkbox-card">
-                            <input type="checkbox" value="16.6">
-                            <span><i class="fa-solid fa-book-open"></i> Baixa Escolaridade dos Adultos</span>
-                        </label>
-                        <label class="checkbox-card">
-                            <input type="checkbox" value="16.6">
-                            <span><i class="fa-solid fa-child-reaching"></i> Crianças Fora da Escola</span>
-                        </label>
-                        <label class="checkbox-card">
-                            <input type="checkbox" value="5.5">
-                            <span><i class="fa-solid fa-faucet-drip"></i> Sem Acesso a Água Potável</span>
-                        </label>
-                        <label class="checkbox-card">
-                            <input type="checkbox" value="5.5">
-                            <span><i class="fa-solid fa-toilet"></i> Sem Saneamento Adequado</span>
-                        </label>
-                        <label class="checkbox-card">
-                            <input type="checkbox" value="5.5">
-                            <span><i class="fa-solid fa-bolt"></i> Sem Acesso a Eletricidade</span>
-                        </label>
-                        <label class="checkbox-card">
-                            <input type="checkbox" value="5.5">
-                            <span><i class="fa-solid fa-house-crack"></i> Habitação Inadequada</span>
-                        </label>
-                        <label class="checkbox-card">
-                            <input type="checkbox" value="5.5">
-                            <span><i class="fa-solid fa-fire-burner"></i> Combustível Poluente na Cozinha</span>
-                        </label>
-                    </div>
+            <!-- Formulário para Falar -->
+            <div class="talk-box">
+                <h3><i class="fa-solid fa-paper-plane"></i> Deixa a tua mensagem ou ideia:</h3>
+                <form id="commentForm">
+                    <input type="text" id="userName" placeholder="O teu nome (ex: Maria do 7ºA)" required>
+                    <textarea id="userMsg" rows="4" placeholder="Escreve aqui o que pensas sobre como podemos acabar com a pobreza ou como te sentes..." required></textarea>
+                    <button type="submit" class="btn-send"><i class="fa-solid fa-heart"></i> Publicar Mensagem</button>
                 </form>
-
-                <div class="calc-result" id="resultBox">
-                    <h3>Índice de Deprivação Aferido: <span id="scoreText">0%</span></h3>
-                    <p id="statusText">Selecione as condições acima para gerar o relatório.</p>
-                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- ODS & Interseccionalidade -->
-    <section id="interseccoes" class="content-section">
-        <div class="container">
-            <h2>Pobreza e a Interseção com a Cidadania Ativa</h2>
-            <div class="ods-cards-grid">
-                <div class="ods-card">
-                    <span class="ods-number">ODS 1 + ODS 8</span>
-                    <h3>Pobreza Laboral</h3>
-                    <p>Ter um emprego já não garante sair da pobreza. Em Portugal e na Europa, milhares de trabalhadores vivem abaixo do limiar de pobreza devido a salários precários e inflação na habitação.</p>
-                </div>
-                <div class="ods-card">
-                    <span class="ods-number">ODS 1 + ODS 13</span>
-                    <h3>Justiça Climática</h3>
-                    <p>As populações mais pobres são as mais desproporcionalmente afetadas por eventos climáticos extremos, secas, inundações e subida do custo dos alimentos.</p>
-                </div>
-                <div class="ods-card">
-                    <span class="ods-number">ODS 1 + ODS 5</span>
-                    <h3>A Pobreza Tem Rosto Feminino</h3>
-                    <p>As mulheres assumem a maior parte do trabalho não pago de cuidados, enfrentam disparidades salariais e têm taxas mais elevadas de pobreza na velhice.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <!-- Mural de Mensagens da Comunidade -->
+            <div class="comments-wall">
+                <h3><i class="fa-solid fa-comments"></i> Mensagens da Comunidade:</h3>
+                
+                <div id="commentsList" class="comments-list">
+                    <!-- Comentários de exemplo carregados por defeito -->
+                    <div class="comment-card">
+                        <div class="comment-header">
+                            <strong><i class="fa-solid fa-user-astronaut"></i> Tomás (12 anos)</strong>
+                            <span class="comment-date">Hoje</span>
+                        </div>
+                        <p>"Acho que nas escolas devíamos fazer mais feiras de doação de brinquedos e livros para crianças que não os conseguem comprar!"</p>
+                    </div>
 
-    <!-- Soluções Estruturais -->
-    <section id="solucoes" class="content-section dark-bg">
-        <div class="container">
-            <h2>Que Soluções Funcionam?</h2>
-            <div class="solutions-grid">
-                <div class="solution-item">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <h3>1. Sistemas Fortes de Proteção Social</h3>
-                    <p>Rendimentos mínimos de inserção, subsídios de desemprego e apoio à infância garantem que sobressaltos da vida não afundem as famílias na miséria.</p>
-                </div>
-                <div class="solution-item">
-                    <i class="fa-solid fa-scale-balanced"></i>
-                    <h3>2. Justiça Fiscal e Redistribuição</h3>
-                    <p>Impostos progressivos que combatem a acumulação extrema de riqueza e financiam serviços públicos universais (Saúde, Educação e Habitação).</p>
-                </div>
-                <div class="solution-item">
-                    <i class="fa-solid fa-building-user"></i>
-                    <h3>3. Habitação Pública Acessível</h3>
-                    <p>Regulação dos mercados imobiliários e investimento público em habitação para garantir o direito a um teto digno.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chamada para Ação / Cidadania -->
-    <section id="agir" class="cta-section">
-        <div class="container">
-            <h2>O Que Podes Fazer Como Cidadão?</h2>
-            <div class="action-grid">
-                <div class="action-card">
-                    <i class="fa-solid fa-hand-holding-hand"></i>
-                    <h3>Voluntariado Local</h3>
-                    <p>Junta-te a iniciativas como a Refood, Bancos Alimentares, EAPN Portugal ou associações locais de apoio a sem-abrigo.</p>
-                </div>
-                <div class="action-card">
-                    <i class="fa-solid fa-bullhorn"></i>
-                    <h3>Advocacia e Exigência Política</h3>
-                    <p>Participa em orçamentos participativos, questiona os teus representantes locais e apoia políticas públicas inclusivas.</p>
-                </div>
-                <div class="action-card">
-                    <i class="fa-solid fa-brain"></i>
-                    <h3>Combater a Aporiafobia</h3>
-                    <p>Rejeita o preconceito contra os pobres. A pobreza é uma falha dos sistemas sociais e económicos, não de caráter individual.</p>
+                    <div class="comment-card">
+                        <div class="comment-header">
+                            <strong><i class="fa-solid fa-user-ninja"></i> Professora Sofia</strong>
+                            <span class="comment-date">Ontem</span>
+                        </div>
+                        <p>"A pobreza resolve-se com empatia. Quando nos preocupamos com o vizinho do lado, o mundo inteiro melhora um bocadinho."</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -240,10 +152,7 @@
 
     <!-- Rodapé -->
     <footer>
-        <div class="container footer-content">
-            <p>&copy; 2026 Global Poverty Observatory | Projeto de Cidadania e Desenvolvimento.</p>
-            <p>Fontes de dados: PNUD, Oxford Poverty & Human Development Initiative (OPHI), EAPN e Eurostat.</p>
-        </div>
+        <p>&copy; Projeto de Cidadania • Feito com <i class="fa-solid fa-heart" style="color:#e5243b;"></i> para um mundo melhor.</p>
     </footer>
 
     <script src="script.js"></script>
