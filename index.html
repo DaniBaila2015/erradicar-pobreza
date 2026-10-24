@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <!-- Navegação / Menu de Abas -->
+    <!-- Navegação / Menu de Abas Interativo -->
     <header class="navbar">
         <div class="logo">
             <i class="fa-solid fa-heart-pulse logo-icon"></i>
@@ -17,21 +17,21 @@
         </div>
         <nav>
             <ul class="nav-tabs">
-                <li><a href="#inicio" class="tab-link active"><i class="fa-solid fa-house"></i> Início</a></li>
-                <li><a href="#o-que-e" class="tab-link"><i class="fa-solid fa-lightbulb"></i> O que é?</a></li>
-                <li><a href="#solucoes" class="tab-link"><i class="fa-solid fa-wand-magic-sparkles"></i> Soluções</a></li>
-                <li><a href="#falar" class="tab-link highlight-tab"><i class="fa-solid fa-comments"></i> Aba de Falar (Vozes)</a></li>
+                <li><button class="tab-btn active" onclick="openTab(event, 'inicio')"><i class="fa-solid fa-house"></i> Início</button></li>
+                <li><button class="tab-btn" onclick="openTab(event, 'o-que-e')"><i class="fa-solid fa-lightbulb"></i> O que é?</button></li>
+                <li><button class="tab-btn" onclick="openTab(event, 'solucoes')"><i class="fa-solid fa-wand-magic-sparkles"></i> Soluções</button></li>
+                <li><button class="tab-btn highlight-tab" onclick="openTab(event, 'falar')"><i class="fa-solid fa-comments"></i> Espaço de Fala</button></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Aba 1: Início (Hero) -->
+    <!-- ABA 1: Início -->
     <section id="inicio" class="tab-content active-content">
         <div class="hero-box">
             <span class="badge">Aprender & Mudar o Mundo</span>
             <h1>Imagine um mundo onde <span class="underline-yellow">todos têm um teto</span>, comida no prato e <span class="underline-red">sorrisos no rosto</span>.</h1>
             <p class="big-text">Erradicar a pobreza é, simplesmente, garantir que <strong>ninguém fica para trás</strong> e que todos têm o básico para viver felizes e com saúde.</p>
-            <a href="#o-que-e" class="btn-main"><i class="fa-solid fa-arrow-down"></i> Vamos aprender juntos?</a>
+            <button class="btn-main" onclick="openTab(event, 'o-que-e')"><i class="fa-solid fa-arrow-right"></i> Vamos aprender juntos?</button>
         </div>
         
         <div class="illustration-row">
@@ -46,7 +46,7 @@
         </div>
     </section>
 
-    <!-- Aba 2: O que é a Pobreza? (Explicado de forma super simples) -->
+    <!-- ABA 2: O que é a Pobreza? -->
     <section id="o-que-e" class="tab-content">
         <div class="section-title">
             <h2>Afinal, o que é a <span class="underline-red">Pobreza</span>?</h2>
@@ -80,7 +80,7 @@
         </div>
     </section>
 
-    <!-- Aba 3: Como Resolver (Soluções Mágicas da Vida Real) -->
+    <!-- ABA 3: Soluções -->
     <section id="solucoes" class="tab-content">
         <div class="section-title">
             <h2>Como podemos <span class="underline-green">resolver</span> isto?</h2>
@@ -106,45 +106,29 @@
         </div>
     </section>
 
-    <!-- Aba 4: A PÁGINA DE TALK / ESPAÇO DE FALA (Aba Falar) -->
+    <!-- ABA 4: ESPAÇO DE FALA (MENSAGENS) -->
     <section id="falar" class="tab-content">
         <div class="talk-container">
             <div class="section-title">
                 <h2>Espaço de Fala: <span class="underline-blue">A Tua Voz Conta!</span></h2>
-                <p>Este é o teu cantinho para falar, dar ideias, fazer perguntas ou deixar uma mensagem bonita sobre o mundo.</p>
+                <p>Este é o teu espaço livre para dar ideias, fazer perguntas ou deixar a tua mensagem sobre um mundo melhor.</p>
             </div>
 
-            <!-- Formulário para Falar -->
+            <!-- Formulário para Escrever Mensagem -->
             <div class="talk-box">
-                <h3><i class="fa-solid fa-paper-plane"></i> Deixa a tua mensagem ou ideia:</h3>
+                <h3><i class="fa-solid fa-paper-plane"></i> Escreve a tua mensagem:</h3>
                 <form id="commentForm">
-                    <input type="text" id="userName" placeholder="O teu nome (ex: Maria do 7ºA)" required>
-                    <textarea id="userMsg" rows="4" placeholder="Escreve aqui o que pensas sobre como podemos acabar com a pobreza ou como te sentes..." required></textarea>
-                    <button type="submit" class="btn-send"><i class="fa-solid fa-heart"></i> Publicar Mensagem</button>
+                    <input type="text" id="userName" placeholder="O teu nome / alcunha" required>
+                    <textarea id="userMsg" rows="4" placeholder="Escreve aqui a tua ideia ou mensagem..." required></textarea>
+                    <button type="submit" class="btn-send"><i class="fa-solid fa-heart"></i> Publicar no Mural</button>
                 </form>
             </div>
 
-            <!-- Mural de Mensagens da Comunidade -->
+            <!-- Mural de Mensagens Limpo -->
             <div class="comments-wall">
-                <h3><i class="fa-solid fa-comments"></i> Mensagens da Comunidade:</h3>
-                
+                <h3><i class="fa-solid fa-comments"></i> Mural de Ideias da Comunidade:</h3>
                 <div id="commentsList" class="comments-list">
-                    <!-- Comentários de exemplo carregados por defeito -->
-                    <div class="comment-card">
-                        <div class="comment-header">
-                            <strong><i class="fa-solid fa-user-astronaut"></i> Tomás (12 anos)</strong>
-                            <span class="comment-date">Hoje</span>
-                        </div>
-                        <p>"Acho que nas escolas devíamos fazer mais feiras de doação de brinquedos e livros para crianças que não os conseguem comprar!"</p>
-                    </div>
-
-                    <div class="comment-card">
-                        <div class="comment-header">
-                            <strong><i class="fa-solid fa-user-ninja"></i> Professora Sofia</strong>
-                            <span class="comment-date">Ontem</span>
-                        </div>
-                        <p>"A pobreza resolve-se com empatia. Quando nos preocupamos com o vizinho do lado, o mundo inteiro melhora um bocadinho."</p>
-                    </div>
+                    <p id="emptyNotice" class="empty-notice">Ainda não há mensagens. Sê o primeiro a publicar!</p>
                 </div>
             </div>
         </div>
@@ -152,7 +136,7 @@
 
     <!-- Rodapé -->
     <footer>
-        <p>&copy; Projeto de Cidadania • Feito com <i class="fa-solid fa-heart" style="color:#e5243b;"></i> para um mundo melhor.</p>
+        <p>&copy; Projeto de Cidadania • Feito com <i class="fa-solid fa-heart" style="color:#ff4757;"></i> para um mundo melhor.</p>
     </footer>
 
     <script src="script.js"></script>
