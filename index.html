@@ -1,144 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo Sem Pobreza | Explicado de Forma Simples</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundo Sem Pobreza | O Portal Definitivo de Cidadania</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-    <!-- Navegação / Menu de Abas Interativo -->
-    <header class="navbar">
-        <div class="logo">
-            <i class="fa-solid fa-heart-pulse logo-icon"></i>
-            <span>Mundo<strong class="underline-red">SemPobreza</strong></span>
-        </div>
-        <nav>
-            <ul class="nav-tabs">
-                <li><button class="tab-btn active" onclick="openTab(event, 'inicio')"><i class="fa-solid fa-house"></i> Início</button></li>
-                <li><button class="tab-btn" onclick="openTab(event, 'o-que-e')"><i class="fa-solid fa-lightbulb"></i> O que é?</button></li>
-                <li><button class="tab-btn" onclick="openTab(event, 'solucoes')"><i class="fa-solid fa-wand-magic-sparkles"></i> Soluções</button></li>
-                <li><button class="tab-btn highlight-tab" onclick="openTab(event, 'falar')"><i class="fa-solid fa-comments"></i> Espaço de Fala</button></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- ABA 1: Início -->
-    <section id="inicio" class="tab-content active-content">
-        <div class="hero-box">
-            <span class="badge">Aprender & Mudar o Mundo</span>
-            <h1>Imagine um mundo onde <span class="underline-yellow">todos têm um teto</span>, comida no prato e <span class="underline-red">sorrisos no rosto</span>.</h1>
-            <p class="big-text">Erradicar a pobreza é, simplesmente, garantir que <strong>ninguém fica para trás</strong> e que todos têm o básico para viver felizes e com saúde.</p>
-            <button class="btn-main" onclick="openTab(event, 'o-que-e')"><i class="fa-solid fa-arrow-right"></i> Vamos aprender juntos?</button>
-        </div>
-        
-        <div class="illustration-row">
-            <div class="img-card">
-                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop" alt="Crianças felizes a sorrir">
-                <p><strong>Alegria:</strong> Toda a gente merece ter um futuro feliz.</p>
-            </div>
-            <div class="img-card">
-                <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800&auto=format&fit=crop" alt="Apoio comunitário e comida">
-                <p><strong>Partilha:</strong> Cuidar uns dos outros é o primeiro passo.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABA 2: O que é a Pobreza? -->
-    <section id="o-que-e" class="tab-content">
-        <div class="section-title">
-            <h2>Afinal, o que é a <span class="underline-red">Pobreza</span>?</h2>
-            <p>Pensa nisto como um jogo de construção com 4 peças principais:</p>
-        </div>
-
-        <div class="simple-cards-grid">
-            <div class="card-simple">
-                <div class="icon-circle red"><i class="fa-solid fa-utensils"></i></div>
-                <h3>1. Falta de Comida</h3>
-                <p>Quando a barriga dói porque não há comida suficiente em casa ou a comida não é saudável.</p>
-            </div>
-
-            <div class="card-simple">
-                <div class="icon-circle blue"><i class="fa-solid fa-house-chimney"></i></div>
-                <h3>2. Sem Casa Digna</h3>
-                <p>Não ter um teto quentinho quando chove ou um lugar seguro e limpo para dormir.</p>
-            </div>
-
-            <div class="card-simple">
-                <div class="icon-circle yellow"><i class="fa-solid fa-graduation-cap"></i></div>
-                <h3>3. Sem Escola</h3>
-                <p>Não conseguir ir à escola para aprender a ler, desenhar, fazer amigos e ter um sonho para o futuro.</p>
-            </div>
-
-            <div class="card-simple">
-                <div class="icon-circle green"><i class="fa-solid fa-kit-medical"></i></div>
-                <h3>4. Sem Médico</h3>
-                <p>Estar doentinho e não ter um médico por perto ou remédios para ajudar a melhorar rápido.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABA 3: Soluções -->
-    <section id="solucoes" class="tab-content">
-        <div class="section-title">
-            <h2>Como podemos <span class="underline-green">resolver</span> isto?</h2>
-            <p>Não é feitiçaria, é trabalho de equipa entre todas as pessoas do mundo!</p>
-        </div>
-
-        <div class="solutions-wrapper">
-            <div class="sol-card">
-                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=600&auto=format&fit=crop" alt="Escola e Educação">
-                <div class="sol-info">
-                    <h3><span class="underline-yellow">Escola para Todos</span></h3>
-                    <p>Se todas as crianças forem à escola, quando crescerem vão saber construir casas, inventar remédios, criar trabalhos e ajudar a comunidade.</p>
-                </div>
-            </div>
-
-            <div class="sol-card">
-                <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb0?q=80&w=600&auto=format&fit=crop" alt="Ajudar e doar">
-                <div class="sol-info">
-                    <h3><span class="underline-red">Partilhar e Ajudar</span></h3>
-                    <p>Apoiar quem mais precisa com comida, roupas e, acima de tudo, carinho e respeito. Ninguém deve sentir-se sozinho!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABA 4: ESPAÇO DE FALA (MENSAGENS) -->
-    <section id="falar" class="tab-content">
-        <div class="talk-container">
-            <div class="section-title">
-                <h2>Espaço de Fala: <span class="underline-blue">A Tua Voz Conta!</span></h2>
-                <p>Este é o teu espaço livre para dar ideias, fazer perguntas ou deixar a tua mensagem sobre um mundo melhor.</p>
-            </div>
-
-            <!-- Formulário para Escrever Mensagem -->
-            <div class="talk-box">
-                <h3><i class="fa-solid fa-paper-plane"></i> Escreve a tua mensagem:</h3>
-                <form id="commentForm">
-                    <input type="text" id="userName" placeholder="O teu nome / alcunha" required>
-                    <textarea id="userMsg" rows="4" placeholder="Escreve aqui a tua ideia ou mensagem..." required></textarea>
-                    <button type="submit" class="btn-send"><i class="fa-solid fa-heart"></i> Publicar no Mural</button>
-                </form>
-            </div>
-
-            <!-- Mural de Mensagens Limpo -->
-            <div class="comments-wall">
-                <h3><i class="fa-solid fa-comments"></i> Mural de Ideias da Comunidade:</h3>
-                <div id="commentsList" class="comments-list">
-                    <p id="emptyNotice" class="empty-notice">Ainda não há mensagens. Sê o primeiro a publicar!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; Projeto de Cidadania • Feito com <i class="fa-solid fa-heart" style="color:#ff4757;"></i> para um mundo melhor.</p>
-    </footer>
-
-    <script src="script.js"></script>
+<!-- Navegação / Menu de Abas Interativo -->
+<header class="navbar">
+<div class="logo">
+<i class="fa-solid fa-earth-americas logo-icon"></i>
+<span>Mundo<strong class="underline-red">SemPobreza</strong></span>
+</div>
+<nav>
+<ul class="nav-tabs">
+<li><button class="tab-btn active" onclick="openTab(event, 'inicio')"><i class="fa-solid fa-house"></i> Início</button></li>
+<li><button class="tab-btn" onclick="openTab(event, 'o-que-e')"><i class="fa-solid fa-lightbulb"></i> O que é?</button></li>
+<li><button class="tab-btn" onclick="openTab(event, 'solucoes')"><i class="fa-solid fa-wand-magic-sparkles"></i> Soluções</button></li>
+<li><button class="tab-btn highlight-tab" onclick="openTab(event, 'falar')"><i class="fa-solid fa-comments"></i> Espaço de Fala</button></li>
+</ul>
+</nav>
+</header>
+<!-- ABA 1: Início -->
+<section id="inicio" class="tab-content active-content">
+<div class="hero-box">
+<span class="badge">Educação para a Cidadania Global</span>
+<h1>Construir um futuro onde <span class="underline-yellow">todos têm um teto</span>, comida na mesa e <span class="underline-red">oportunidades iguais</span>.</h1>
+<p class="big-text">Erradicar a pobreza extrema e relativa não é um favor de caridade — é uma questão urgente de justiça social, direitos humanos e dignidade para toda a comunidade humana.</p>
+<button class="btn-main" onclick="openTab(event, 'o-que-e')"><i class="fa-solid fa-arrow-right"></i> Explorar o Guia Completo</button>
+</div>
+<div class="illustration-row">
+<div class="img-card">
+<img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop" alt="Crianças felizes a sorrir">
+<p><strong>Dignidade Humana:</strong> Toda a criança merece crescer num ambiente seguro, sem privações e com acesso a todas as ferramentas para triunfar.</p>
+</div>
+<div class="img-card">
+<img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800&auto=format&fit=crop" alt="Apoio comunitário e comida">
+<p><strong>Solidariedade Ativa:</strong> A entreajuda comunitária e as políticas públicas fortes são as únicas barreiras eficazes contra a exclusão social.</p>
+</div>
+</div>
+</section>
+<!-- ABA 2: O que é a Pobreza? -->
+<section id="o-que-e" class="tab-content">
+<div class="section-title">
+<h2>Compreender a Pobreza em <span class="underline-red">Profundidade</span></h2>
+<p>A pobreza vai muito além de não ter dinheiro na carteira. É uma realidade multidimensional dividida em pilares fundamentais:</p>
+</div>
+<div class="simple-cards-grid">
+<div class="card-simple">
+<div class="icon-circle red"><i class="fa-solid fa-utensils"></i></div>
+<h3>1. Insegurança Alimentar</h3>
+<p>A privação de acesso regular a alimentos nutritivos e seguros afeta o desenvolvimento físico e cognitivo, criando ciclos geracionais difíceis de quebrar.</p>
+</div>
+<div class="card-simple">
+<div class="icon-circle blue"><i class="fa-solid fa-house-chimney"></i></div>
+<h3>2. Crise de Habitação</h3>
+<p>A especulação imobiliária deixa milhares de famílias sem um lar seguro, enfrentando custos insustentáveis de energia, aquecimento e rendas.</p>
+</div>
+<div class="card-simple">
+<div class="icon-circle yellow"><i class="fa-solid fa-graduation-cap"></i></div>
+<h3>3. Falta de Educação Inclusiva</h3>
+<p>A educação é o maior elevador social. Sem acesso igualitário a escolas de qualidade e literacia digital, os jovens ficam presos a empregos precários.</p>
+</div>
+<div class="card-simple">
+<div class="icon-circle green"><i class="fa-solid fa-kit-medical"></i></div>
+<h3>4. Barreiras na Saúde</h3>
+<p>Doenças crónicas, custos de medicamentos e falta de apoio à saúde mental empurram frequentemente famílias inteiras para a vulnerabilidade financeira.</p>
+</div>
+</div>
+</section>
+<!-- ABA 3: Soluções -->
+<section id="solucoes" class="tab-content">
+<div class="section-title">
+<h2>Estratégias Reais para <span class="underline-green">Erradicar a Pobreza</span></h2>
+<p>O combate à pobreza exige medidas estruturais profundas e envolvimento cívico:</p>
+</div>
+<div class="solutions-wrapper">
+<div class="sol-card">
+<img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=600&auto=format&fit=crop" alt="Escola e Educação">
+<div class="sol-info">
+<h3><span class="underline-yellow">Investimento na Educação Universal</span></h3>
+<p>Garantir que todas as crianças, independentemente da origem socioeconómica, têm acesso gratuito a material escolar, refeições nutritivas na escola e apoio pedagógico personalizado. Só assim se promove a verdadeira igualdade de oportunidades desde a nascença.</p>
+</div>
+</div>
+<div class="sol-card">
+<img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb0?q=80&w=600&auto=format&fit=crop" alt="Ajudar e doar">
+<div class="sol-info">
+<h3><span class="underline-red">Redes de Proteção Social e Salários Justos</span></h3>
+<p>Criação de rendimentos mínimos garantidos robustos, regulação do mercado de trabalho para eliminar a precariedade extrema ("trabalhadores pobres") e investimento maciço em habitação pública acessível para travar a exclusão habitacional.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ABA 4: ESPAÇO DE FALA (MENSAGENS) -->
+<section id="falar" class="tab-content">
+<div class="talk-container">
+<div class="section-title">
+<h2>Espaço de Fala: <span class="underline-blue">A Tua Voz Conta!</span></h2>
+<p>Deixa aqui a tua opinião, sugestão ou reflexão sobre como podemos construir uma sociedade mais justa e igualitária.</p>
+</div>
+<!-- Formulário para Escrever Mensagem -->
+<div class="talk-box">
+<h3><i class="fa-solid fa-paper-plane"></i> Escreve a tua mensagem:</h3>
+<form id="commentForm">
+<input type="text" id="userName" placeholder="O teu nome / alcunha" required>
+<textarea id="userMsg" rows="4" placeholder="Escreve aqui a tua ideia ou mensagem para o mundo..." required></textarea>
+<button type="submit" class="btn-send"><i class="fa-solid fa-heart"></i> Publicar no Mural</button>
+</form>
+</div>
+<!-- Mural de Mensagens -->
+<div class="comments-wall">
+<h3><i class="fa-solid fa-comments"></i> Mural de Ideias da Comunidade:</h3>
+<div id="commentsList" class="comments-list">
+<p id="emptyNotice" class="empty-notice">Ainda não há mensagens guardadas. Sê o primeiro a publicar!</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Rodapé -->
+<footer>
+<p>© Projeto de Cidadania e Desenvolvimento • Erradicar a Pobreza</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
