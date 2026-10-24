@@ -1,6 +1,43 @@
+// Function para Alternar entre Abas do Menu
+function openTab(evt, tabName) {
+    // 1. Ocultar todos os conteúdos das abas
+    const tabContents = document.querySelectorAll(".tab-content");
+    tabContents.forEach(content => {
+        content.classList.remove("active-content");
+    });
+
+    // 2. Remover o estado ativo de todos os botões
+    const tabBtns = document.querySelectorAll(".tab-btn");
+    tabBtns.forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    // 3. Mostrar a aba selecionada
+    const targetTab = document.getElementById(tabName);
+    if (targetTab) {
+        targetTab.classList.add("active-content");
+    }
+
+    // 4. Ativar o botão correto
+    if (evt && evt.currentTarget && evt.currentTarget.classList.contains("tab-btn")) {
+        evt.currentTarget.classList.add("active");
+    } else {
+        const matchingBtn = document.querySelector(`.tab-btn[onclick*='${tabName}']`);
+        if (matchingBtn) matchingBtn.classList.add("active");
+    }
+
+    // Voltar suavemente ao topo
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Lógica de Guardar e Carregar Mensagens Permanentemente
 document.addEventListener("DOMContentLoaded", function () {
     const commentForm = document.getElementById("commentForm");
     const commentsList = document.getElementById("commentsList");
+    const emptyNotice = document.getElementById("emptyNotice");
+
+    // 1. CARREGAR MENSAGENS GUARDADAS QUANDO A PÁGINA ABRE
+    loadSavedComments();
 
     if (commentForm) {
         commentForm.addEventListener("submit", function (e) {
@@ -13,32 +50,68 @@ document.addEventListener("DOMContentLoaded", function () {
             const message = msgInput.value.trim();
 
             if (name && message) {
-                // Criar o novo cartão de comentário
-                const newComment = document.createElement("div");
-                newComment.className = "comment-card";
-                newComment.style.borderLeftColor = "#2ed573"; // Cor verde para destacar novos comentários
+                // Criar o objeto da nova mensagem com a data atual
+                const newCommentObj = {
+                    name: name,
+                    message: message,
+                    date: new Date().toLocaleDateString('pt-PT', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })
+                };
 
-                newComment.innerHTML = `
-                    <div class="comment-header">
-                        <strong><i class="fa-solid fa-user-sparkles"></i> ${escapeHTML(name)}</strong>
-                        <span class="comment-date">Agora mesmo</span>
-                    </div>
-                    <p>"${escapeHTML(message)}"</p>
-                `;
+                // Guardar no localStorage
+                saveCommentToStorage(newCommentObj);
 
-                // Adicionar ao topo da lista
-                commentsList.prepend(newComment);
+                // Adicionar a mensagem ao ecrã
+                renderCommentCard(newCommentObj, true);
 
                 // Limpar o formulário
                 nameInput.value = "";
                 msgInput.value = "";
-
-                alert("Obrigado por partilhares a tua ideia no Espaço de Fala! 🌟");
             }
         });
     }
 
-    // Função de segurança para evitar texto malicioso
+    // Função para guardar mensagem na memória do navegador
+    function saveCommentToStorage(comment) {
+        let comments = JSON.parse(localStorage.getItem("povertyZeroComments")) || [];
+        comments.unshift(comment); // Adiciona no início da lista
+        localStorage.setItem("povertyZeroComments", JSON.stringify(comments));
+    }
+
+    // Função para carregar as mensagens guardadas
+    function loadSavedComments() {
+        let comments = JSON.parse(localStorage.getItem("povertyZeroComments")) || [];
+
+        if (comments.length > 0) {
+            if (emptyNotice) emptyNotice.style.display = "none";
+            comments.forEach(comment => {
+                renderCommentCard(comment, false);
+            });
+        }
+    }
+
+    // Função para desenhar o cartão de mensagem no ecrã
+    function renderCommentCard(comment, isNew) {
+        if (emptyNotice) emptyNotice.style.display = "none";
+
+        const card = document.createElement("div");
+        card.className = "comment-card";
+
+        card.innerHTML = `
+            <div class="comment-header">
+                <strong><i class="fa-solid fa-user"></i> ${escapeHTML(comment.name)}</strong>
+                <span class="comment-date">${comment.date}</span>
+            </div>
+            <p>"${escapeHTML(comment.message)}"</p>
+        `;
+
+        if (isNew) {
+            commentsList.prepend(card); // Novas mensagens vão para o topo
+        } else {
+            commentsList.appendChild(card);
+        }
+    }
+
+    // Proteção de segurança contra caracteres especiais
     function escapeHTML(str) {
         return str.replace(/[&<>'"]/g, 
             tag => ({
